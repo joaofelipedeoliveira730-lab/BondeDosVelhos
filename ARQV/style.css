@@ -1,0 +1,120 @@
+/* Configurações de Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #eef2f3;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Topo do Site */
+header {
+    background: #1a1a1a;
+    color: #fff;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 5px solid #ffcc00; /* Um detalhe em amarelo para dar estilo */
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Layout Principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* A Grade de Fotos */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* O Cartão da Foto */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efeito de flutuar ao passar o mouse */
+}
+
+.foto-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-text {
+    padding: 20px;
+}
+
+.card-text h3 {
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.card-text p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.data {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #1a1a1a;
+    color: #777;
+    margin-top: 50px;
+}
+
+/* Estilo do Botão de Link */
+.botao-galeria {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(110, 142, 251, 0.4);
+    transition: 0.3s;
+}
+
+.botao-galeria:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(110, 142, 251, 0.6);
+    background: linear-gradient(135deg, #a777e3, #6e8efb);
+}
